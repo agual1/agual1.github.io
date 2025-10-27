@@ -141,5 +141,23 @@ and Sensory Quality of Citrus limon, foods, 12, 4304: 1-11.</li><!--list item, e
     A continuació veus una imatge de ChatGPT en la que es veu que es disculpa després d'haver-me enganyat dient-me que no hi havia cap diferència en el ferro quan sí que n'hi havia.</p>
   <p><img src="capturachatgpt3.png">
     <p>Per veure si la diferencia es significativa ho veurem a la pagina del professor on es troba la <a href="https://pompeu.neocities.org/t/"> t de Student </a></p>
-</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mode clar/fosc amb canvi d'icona
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    themeToggle.addEventListener('click', () => {
+      if (document.body.getAttribute('data-bs-theme') === 'dark') {
+        document.body.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      } else {
+        document.body.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+    });
+  </script>
+ </body>
 </html>
