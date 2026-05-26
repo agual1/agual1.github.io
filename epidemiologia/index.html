@@ -256,30 +256,28 @@
             <div class="city-highlight">🏭 Hospitalet de Llobregat · dades dels servidors XPVCA, Meteocat i SIVIC</div>
         </div>
         <p style="margin-top: 20px; font-size: 1.1rem; background: #e6f0ea; padding: 12px 24px; border-radius: 50px;">
-            <strong>Problema clàssic:</strong> A partir del conjunt de dades diàries de qualitat de l'aire (NO₂, NOX, O₃, PM10, PM2.5, SO₂) i incidència d'infeccions respiratòries (per 1000 habitants) registrades a Hospitalet de Llobregat entre 2012 i 2025, es demana avaluar l'associació entre la contaminació i la salut respiratòria, calcular indicadors de risc i interpretar els pics detectats.
+            <strong>Problema clàssic:</strong> A partir del conjunt de dades diàries de qualitat de l'aire (NO₂, NOX, PM10, PM2.5) i incidència d'infeccions respiratòries (per 1000 habitants) registrades a Hospitalet de Llobregat entre 2012 i 2025, es demana avaluar l'associació entre la contaminació i la salut respiratòria, calcular indicadors de risc i interpretar els pics detectats.
         </p>
     </div>
 
     <!-- ENUNCIAT DEL PROBLEMA AMB DADES CONCRETES -->
     <div class="card">
         <h2>📋 Enunciat complet · dades proporcionades</h2>
-        <p><strong>Fitxer:</strong> <span class="small-mono">dades1.csv</span> (5264 dies vàlids). Columnes: data, incidencia_1000, pm2.5, pm10, no2, nox, o3, so2.</p>
+        <p><strong>Fitxer:</strong> <span class="small-mono">dades1.csv</span> (5264 dies vàlids). Columnes: data, incidencia_1000, pm2.5, pm10, no2, nox.</p>
         <div class="data-grid">
             <div class="stat-box"><span class="stat-number">5264</span><div class="stat-label">Dies analitzats</div></div>
-            <div class="stat-box"><span class="stat-number">1.51</span><div class="stat-label">Incidència mitjana (casos/1000)</div></div>
-            <div class="stat-box"><span class="stat-number">0.411</span><div class="stat-label">Correlació màxima (lag 0) · NOX</div></div>
+            <div class="stat-box"><span class="stat-number">1.91</span><div class="stat-label">Incidència mitjana (casos/1000)</div></div>
+            <div class="stat-box"><span class="stat-number">0.423</span><div class="stat-label">Correlació màxima (lag 0) · NOX</div></div>
             <div class="stat-box"><span class="stat-number">15</span><div class="stat-label">Pics d'alta incidència detectats</div></div>
         </div>
         <h3>🌫️ Mitjanes de contaminants i superacions de límits OMS (diaris)</h3>
         <div class="pollutant-bar">
-            <span><strong>NO₂</strong> 30.4 µg/m³ <span class="exceed">253 dies > límit 25</span></span>
-            <span><strong>NOX</strong> 55.0 µg/m³ (sense límit OMS diari)</span>
-            <span><strong>O₃</strong> 40.0 µg/m³ <span class="exceed">0 > 100</span></span>
-            <span><strong>PM10</strong> 19.8 µg/m³ <span class="exceed">16 > 45</span></span>
-            <span><strong>PM2.5</strong> 10.8 µg/m³ <span class="exceed">11 > 15</span></span>
-            <span><strong>SO₂</strong> 2.6 µg/m³ <span class="exceed">0 > 40</span></span>
+            <span><strong>NO₂</strong> 30.6 µg/m³ <span class="exceed">2997 dies > límit 25</span></span>
+            <span><strong>NOX</strong> 45.4 µg/m³ (sense límit OMS diari)</span>
+            <span><strong>PM10</strong> 24.4 µg/m³ <span class="exceed">168 > 45</span></span>
+            <span><strong>PM2.5</strong> 10.5 µg/m³ <span class="exceed">15 > 15</span></span>
         </div>
-        <p class="footnote" style="margin-top: 0;">* Dies amb registre: NO₂ 5037, O₃ 756, PM10 2442, PM2.5 61, SO₂ 751.</p>
+        <p class="footnote" style="margin-top: 0;">* Dies amb registre: NO₂ 5153, PM10 5018, PM2.5 88.</p>
         
         <div style="background: #faf7e6; padding: 16px 22px; border-radius: 24px; margin: 24px 0 8px;">
             <strong>📌 Preguntes del problema (a resoldre):</strong>
