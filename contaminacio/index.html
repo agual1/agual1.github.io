@@ -163,6 +163,20 @@
           <p>As you can see in the following image Hospitalet de Llobregat air pollution comes from Barcelona city area</p>
           <img src="pollutionrose.png">
           <img src="googlemaps.png">
+  <p>To have a better view of the PollutionRose with the map at the same time I've used Rstudio and I've generated a PolarMap</p>
+          <p>We only need data in columns named ws for wind speed, wd for wind direction, to choose a pollutan(e.g.: 
+            PM<sub>10</sub>.), lat for the latitude
+            of the place, lon for the longitude of the place, site for the place that you want and the limits of the map. These are conditions of the openair library in order to create a pollution rose with the instruction
+          <code>polarMap(
+  polar_data,
+  pollutant = "pm10",
+  latitude = "lat",
+  longitude = "lon",
+  popup = "site",
+  limits = c(0, 500)
+)</code></p>
+          <p>As you can see now it shows PollutionRose and the map at the same time.</p>
+          <img src="polarmap.png">
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
